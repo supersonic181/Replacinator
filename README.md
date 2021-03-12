@@ -4,9 +4,13 @@ This is python script written by me (not from scratch) to replace 1st page of an
 Q) How it works?
 
   Step 1: Keep Replacinator.py file and PDF folder in same directory
+  
   Step 2: Choose the 1st Page and replace with Name_Page.pdf in PDF directory but make sure you keep the name same else you have to change the name in script.
+  
   Step 3: Do the same for Source.pdf.
+  
   Step 4: Keep any/blank pdf of your name (in my case it's G_58_ShubhamShaw.pdf), you can keep any name but replace the name in script.
+  
   Step 5: Open Replacinator.py and Run it. 
 
 Q) Did "I" wrote the script from Scartch?
