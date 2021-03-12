@@ -11,7 +11,9 @@ This is python script written by me (not from scratch) to replace 1st page of an
   
   Step 4: Keep any/blank pdf of your name (in my case it's G_58_ShubhamShaw.pdf), you can keep any name but replace the name in script.
   
-  Step 5: Open Replacinator.py and Run it. 
+  Step 5: Open Python IDE or CMD and run "pip install PyPDF2" to install the necessary packages to run the script.
+  
+  Step 6: Open Replacinator.py and Run it. 
 
 
 **Q) Did "I" wrote the script from Scartch?**
