@@ -17,7 +17,6 @@ try:
         ans = pdfReader_Source.getPage(i)
         destination.addPage(ans)
           
-    # new pdf file object
     newFile = open('PDF/G_58_ShubhamShaw.pdf', 'wb')
     destination.write(newFile)
 
