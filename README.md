@@ -1,19 +1,13 @@
 # Replacinator
-This is python script written by me (not from scratch) to replace first page of any Pdf with the desired first page.
+This is python script written by me (not from scratch) to copy any number of pages from two Pdf and create new pdf.
 
 **Q) How it works?**
 
-  Step 1: Keep Replacinator.py file and PDF folder in same directory
+  Step 1: Keep Replacinator.py file and PDFs in same directory
   
-  Step 2: Choose the 1st Page and replace with Name_Page.pdf in PDF directory but make sure you keep the name same else you have to change the name in script.
+  Step 2: Open Cmd -> Move to Replacinator.py folder by using CD command
   
-  Step 3: Do the same for Source.pdf.
-  
-  Step 4: Keep any/blank pdf of your name (in my case it's G_58_ShubhamShaw.pdf), you can keep any name but replace the name in script.
-  
-  Step 5: Open Python IDE or CMD and run "pip install PyPDF2" to install the necessary packages to run the script.
-  
-  Step 6: Open Replacinator.py and Run it. 
+  Step 3: Run "python replacinator.py"
 
 
 **Q) Did "I" wrote the script from Scartch?**
@@ -23,14 +17,14 @@ This is python script written by me (not from scratch) to replace first page of 
 
 **Q) Where did i learn this from?**
 
-  RealPython site has a whole tutorial blog on "How to get started with PDF in Python?", that's where i learnt what to modify and what not to in the original script.
+  RealPython site has a whole tutorial blog on "How to get started with PDF in Python?", that's where i learnt what to modify and what to remove from the original script.
 
 
-**Q) What "I" wrote this script for?**
+**Q) Why "I" wrote this script for?**
 
   To be honest, i was way to lazy to modify the assignments send over by my friends for submission, so i wanted a easy and lazy technic to modify the assignment pdfs, thus the Replacinator :p 
 
-But, you can also use it to replace any amt of pages or any particular page from 2 pdfs or from 1 pdf , just make a minor changes in the code :D
+But, you can also use it to replace any amt of pages or any particular page from 2 pdfs or from 1 pdf :D
 
 
 **Q) Why the name "Replacinator"?**
