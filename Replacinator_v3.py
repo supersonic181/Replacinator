@@ -32,12 +32,11 @@ with open('Replacinator.pdf', 'wb') as newFile:
     with open(second_pdf,'rb') as source:
         pdfReader_Source = PyPDF2.PdfFileReader(source)
         pageCount = pdfReader_Source.getNumPages()
-        input2 = []
-        while (len(input2) != 2):
+        while (len(input1) != 2):
             input2 = input("Enter the starting and ending page number you want to copy from PDF2: ").split(' ')
-            if(len(input2) != 2):
+            if(len(input1) != 2):
                 print("Please enter 2 values.")
-        start, end = map(int, input2)
+        start, end = map(int, input1)
         start = start - 1
         for i in range(start,end):
             ans = pdfReader_Source.getPage(i)
