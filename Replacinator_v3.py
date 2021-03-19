@@ -17,11 +17,13 @@ with open('Replacinator.pdf', 'wb') as newFile:
     
     with open(first_pdf,'rb') as namePage:
         pdfReader_Name = PyPDF2.PdfFileReader(namePage)
-        input1 = []
-        while (len(input1) != 2):
+        valid_input = False
+        while (valid_input == False):
             input1 = input("Enter the starting and ending page number you want to copy from PDF1: ").split(' ')
-            if(len(input1) != 2):
-                print("Please enter 2 values.")
+            if (len(input1) != 2) or (not input1[0].isnumeric()) or (not input1[1].isnumeric()):
+                print("Please enter 2 integers.")
+            else:
+                valid_input = True
         start, end = map(int, input1)
         start = start - 1
         for i in range(start,end):
@@ -32,10 +34,13 @@ with open('Replacinator.pdf', 'wb') as newFile:
     with open(second_pdf,'rb') as source:
         pdfReader_Source = PyPDF2.PdfFileReader(source)
         pageCount = pdfReader_Source.getNumPages()
-        while (len(input1) != 2):
+        valid_input = False
+        while (valid_input == False):
             input1 = input("Enter the starting and ending page number you want to copy from PDF2: ").split(' ')
-            if(len(input1) != 2):
-                print("Please enter 2 values.")
+            if (len(input1) != 2) or (not input1[0].isnumeric()) or (not input1[1].isnumeric()):
+                print("Please enter 2 integers.")
+            else:
+                valid_input = True
         start, end = map(int, input1)
         start = start - 1
         for i in range(start,end):
