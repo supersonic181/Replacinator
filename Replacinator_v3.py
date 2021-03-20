@@ -5,10 +5,10 @@ except:
     import subprocess
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyPDF2'])
 
-def valid_input_checker():
+def valid_input_checker(pdf_name):
     valid_input = False
     while (valid_input == False):
-            input1 = input("Enter the starting and ending page number you want to copy from PDF1: ").split(' ')
+            input1 = input(f"Enter the starting and ending page number you want to copy from {pdf_name}: ").split(' ')
             if (len(input1) != 2) or (not input1[0].isnumeric()) or (not input1[1].isnumeric()):
                 print("Please enter 2 integers.")
                 valid_input = False
@@ -29,7 +29,7 @@ with open(final_pdf, 'wb') as newFile:
     
     with open(first_pdf,'rb') as namePage:
         pdfReader_Name = PyPDF2.PdfFileReader(namePage)
-        start,end = valid_input_checker()
+        start,end = valid_input_checker(first_pdf)
         start = start - 1
         for i in range(start,end):
             name = pdfReader_Name.getPage(i)
@@ -39,7 +39,7 @@ with open(final_pdf, 'wb') as newFile:
     with open(second_pdf,'rb') as source:
         pdfReader_Source = PyPDF2.PdfFileReader(source)
         pageCount = pdfReader_Source.getNumPages()
-        start,end = valid_input_checker()
+        start,end = valid_input_checker(second_pdf)
         start = start - 1
         for i in range(start,end):
             ans = pdfReader_Source.getPage(i)
